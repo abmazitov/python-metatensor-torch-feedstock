@@ -8,6 +8,7 @@ c_stdlib_version:
 - '13.3'
 channel_sources:
 - conda-forge
+- metatensor
 channel_targets:
 - metatensor main
 cxx_compiler:
