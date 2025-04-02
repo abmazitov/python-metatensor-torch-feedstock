@@ -1,5 +1,5 @@
 {% set name = "metatensor-torch" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: python-{{ name|lower }}
@@ -34,7 +34,7 @@ requirements:
     # (torch's CMake targets tries to find CUDA compilers even when there is no CUDA
     # code to build). This does not impact the `run` dependency, since torch's
     # `run_exports` are variant agnostic
-    - pytorch =*=cpu*
+    - pytorch=*=cpu*
     - pip
     - libmetatensor-torch {{ version }}
     - python-metatensor-core >=0.1.10,<0.2.0
